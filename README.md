@@ -12,7 +12,7 @@ go anything is here
       - 将hello 加入到项目GOPATH中
    + gvp out
    
- > 
+ > [图片](Assets/Res/image/go-newbie-GOPATH.png)
    
  5. cd hello
  6. 创建hello.go, world/world.go， Godep-Git依赖
@@ -26,6 +26,8 @@ go anything is here
       - 使用命令行方式执行
       - 报了一个hello/world包找不到，因为GOPATH中没有go-newbie/.godeps目录。
       - 解决方法，需要手动把go-newbie/.godeps目录加载到GOPATH环境变量中（如果通过idea执行，则可以配置GOPATH）
+   
+   > [图片](Assets/Res/image/go-newbie-hello-GOPATH.png)
       
  8. 在idea 中执行Hello.og
    + 配置GOPATH：见图
@@ -33,3 +35,5 @@ go anything is here
       - [x] Index entire GOPATH. 这个选项是否索引搜索所有GOPATH中的包，如果不选则只搜索当前项目vendored目录
       - 这两个选项都可以不使用
    
+   > [图片](Assets/Res/image/go-bewbie-idea-GOPATH.png)
+   > [图片](Assets/Res/image/go-newbie-idea-hello-result.png)
