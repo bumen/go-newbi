@@ -26,6 +26,8 @@ go anything is here
       - 使用命令行方式执行
       - 报了一个hello/world包找不到，因为GOPATH中没有go-newbie/.godeps目录。
       - 解决方法，需要手动把go-newbie/.godeps目录加载到GOPATH环境变量中（如果通过idea执行，则可以配置GOPATH）
+        > 这个可以通过设置idea中的project gopath，然后启动idea后，自动把project gopath加入到gopath中。
+        > 而不会影响系统环境变量的GOPATH，所以如果在idea中开发，然后使用go命令打包其实也不需要手动设置了
    
    > [图片](Assets/Res/image/go-newbie-hello-GOPATH.png)
       
@@ -34,6 +36,8 @@ go anything is here
       - [x] Use GOPATH that's defined in system environment. 这个选择Global GOPATH框里是否使用系统环境变量设置的GOPATH
       - [x] Index entire GOPATH. 这个选项是否索引搜索所有GOPATH中的包，如果不选则只搜索当前项目vendored目录
       - 这两个选项都可以不使用
+   
+   + 在
    
    > [图片](Assets/Res/image/go-bewbie-idea-GOPATH.png)
    > [图片](Assets/Res/image/go-newbie-idea-hello-result.png)
