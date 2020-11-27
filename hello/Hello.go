@@ -13,4 +13,9 @@ func main() {
 	fmt.Printf("UUIDv4: %s\n", u1)
 
 	world.Say()
+
+	world.You()
+
+	world.Tab()
+	world.CAY()
 }
