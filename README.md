@@ -43,8 +43,15 @@ go anything is here
    > [图片](Assets/Res/image/go-newbie-idea-hello-result.png)
 
 ### windows软链接遇到的问题，（linux不确定）
+ > 如果目录结构为：go-newbie/src/hello后，就不需要创建软链了
+   + 设置idea, project GOPATH为go-newbie
+   + 设置idea, module GOPATH为hello/.godeps
+   
  * 使用go-newbie/.godeps作用为项目GOPATH时，然后将hello链接到src子目录后的代码同步问题
    + 链接完之后，由于修改了原hello包中的代码后，而链接的hello中代码没有及时更新，导致新加的接口或修改不能及时使用或生效
    + 所以解决
      1. 不使用go-newbie/.godeps作为项目GOPATH, 而将go-newbie作为GOPATH目录，而创建一个src子目录。将包都放到src目录下，可能使用引用时需要加上go-newbie
      2. 每个修改完使用文件reload 快捷键 Ctrl + Alt + Y （目前我使用的是这种）
+     
+### go-newbie/src下都是module
+ * 所以都可以把每个module修改为单个git submodule
